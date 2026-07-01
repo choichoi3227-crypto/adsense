@@ -7,7 +7,7 @@ compatibility_date = "2025-06-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "clouddesk-db"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "ef723cab-abaf-4387-b4e2-6959e4608ecd"
 
 # ── Workers AI 바인딩 (구조 체크리스트 분석기가 사용) ──────
 [ai]
