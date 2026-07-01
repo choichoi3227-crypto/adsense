@@ -151,7 +151,7 @@ export async function handleAbout(request, env) {
   `;
   return renderLayout({
     title: `소개 — ${meta.site_name || "CloudDesk"}`,
-    description: "CloudDesk 소개",
+    description: "Cloudpress 소개",
     bodyHtml: body,
     activeNav: "about",
     siteName: meta.site_name,
