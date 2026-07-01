@@ -1,0 +1,16 @@
+{
+  "name": "clouddesk-blog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 execute clouddesk-db --local --file=./migrations/0001_init.sql && wrangler d1 execute clouddesk-db --local --file=./migrations/0002_seed_posts.sql",
+    "db:migrate:remote": "wrangler d1 execute clouddesk-db --remote --file=./migrations/0001_init.sql && wrangler d1 execute clouddesk-db --remote --file=./migrations/0002_seed_posts.sql",
+    "seed:generate": "node scripts/generate_seed_sql.mjs > migrations/0002_seed_posts.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.4.0"
+  }
+}

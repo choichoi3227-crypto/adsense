@@ -1,0 +1,23 @@
+name = "clouddesk-blog"
+main = "src/index.js"
+compatibility_date = "2025-06-01"
+
+# ── D1 데이터베이스 바인딩 ──────────────────────────────
+# 1) `wrangler d1 create clouddesk-db` 실행 후 아래 database_id를 교체하세요.
+[[d1_databases]]
+binding = "DB"
+database_name = "clouddesk-db"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+
+# ── Workers AI 바인딩 (구조 체크리스트 분석기가 사용) ──────
+[ai]
+binding = "AI"
+
+# ── 정적 자산(파비콘, robots.txt 등) ───────────────────
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# ── Secrets (wrangler secret put 으로 등록, 여기 적지 마세요) ──
+# ADMIN_TOKEN   : 어드민 로그인용 비밀 토큰
+#   등록: wrangler secret put ADMIN_TOKEN
