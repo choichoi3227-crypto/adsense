@@ -139,6 +139,8 @@ export function renderLayout({ title, description, bodyHtml, activeNav = "", sit
   return `<!DOCTYPE html>
 <html lang="ko">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5852370252252543"
+     crossorigin="anonymous"></script>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${escapeHtml(title)}</title>
